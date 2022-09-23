@@ -8,6 +8,10 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+    - name: Check out my policy repo
+      uses: actions/checkout@master
+      with:
+        repository: igreen/policy-as-a-code  
     - name: Scan docker custom
       id: terrascan-k8s
       uses: tenable/terrascan-action@main
