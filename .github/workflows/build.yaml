@@ -11,7 +11,8 @@ jobs:
     - name: Check out my policy repo
       uses: actions/checkout@main
       with:
-        repository: igreenrajas/policy-as-a-code  
+        repository: igreenrajas/policy-as-a-code
+        path: ./policy-as-a-code
     - name: Scan docker custom
       id: terrascan-k8s
       uses: tenable/terrascan-action@main
