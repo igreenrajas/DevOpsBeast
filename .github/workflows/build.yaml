@@ -38,6 +38,11 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+    - name: Check out my policy repo
+      uses: actions/checkout@main
+      with:
+        repository: igreenrajas/policy-as-a-code
+        path: ./policy-as-a-code  
     - name: Scan Terraform 
       id: terrascan
       uses:  tenable/terrascan-action@main
