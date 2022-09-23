@@ -23,7 +23,7 @@ jobs:
         only_warn: true
         sarif_upload: true
         iac_dir: 'local-policy/'
-        policy_path: 'local-policy/'
+        policy_path: '/policy-as-a-code/'
         
     - name: Upload SARIF file
       uses: github/codeql-action/upload-sarif@v1
