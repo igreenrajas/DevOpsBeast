@@ -80,7 +80,7 @@ jobs:
         policy_type: 'k8s'
         only_warn: true
         sarif_upload: true
-        iac_dir: 'k8s/'
+        iac_dir: 'k8s/sample-helm-docker2/kubeyaml/'
         policy_path: 'policy-as-a-code/'        
         
     - name: Upload SARIF file
